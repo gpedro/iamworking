@@ -1,0 +1,39 @@
+{
+  "name": "working",
+  "description": "working hours log",
+  "version": "0.1.0",
+  "homepage": "",
+  "author": {
+    "name": "jugoncalves",
+    "email": "junia.goncalves@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ],
+  "main": "lib/working",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.17",
+    "commander": ">= 1.1.1"
+  },
+  "keywords": [],
+  "preferGlobal": "true",
+  "bin": {
+    "iamworking" : "lib/working.js"
+  }
+}
