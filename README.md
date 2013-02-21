@@ -4,3 +4,4 @@ To run:
 
     npm install
     npm link
+    imworking
