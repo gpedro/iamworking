@@ -4,4 +4,15 @@ To run:
 
     npm install
     npm link
-    iamworking
+
+## iamworking on
+    // todo
+
+## iamworking off
+    // todo
+
+## iamworking today
+    Show today hours.
+
+## iamworking ?
+    Check whether entry hour is open.
