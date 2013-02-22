@@ -29,7 +29,11 @@
   },
   "devDependencies": {
     "grunt": "~0.3.17",
-    "commander": ">= 1.1.1"
+    "commander": ">= 1.1.1",
+    "jsonpointer":">= 1.1.0",
+    "moment": ">= 2.0.0",
+    "jsonfile": ">= 0.0.1" ,
+    "underscore": ">= 1.4.4"
   },
   "keywords": [],
   "preferGlobal": "true",
