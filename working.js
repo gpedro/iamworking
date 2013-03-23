@@ -1,18 +1,17 @@
 #! /usr/bin/env node
 
-var working = require('commander');
-
-var hours = {};
+var  working = require('commander')
+   , logger = require('./lib/logger');
 
 // version
-working.version('0.0.2');
+working.version('0.0.3');
 
-// log start hour
+// log entry hour
 working
    .command('on')
    .description('add entry hour')
    .action(function(){
-      // todo
+      logger.on();
    });
 
 // log leave hour
@@ -20,7 +19,7 @@ working
    .command('off')
    .description('add leave hour')
    .action(function(){
-      // todo
+      logger.off();
    });
 
 // see today info
@@ -28,22 +27,15 @@ working
    .command('today')
    .description('show today hours')
    .action(function(){
-      console.log(
-		"\n \nYou started working at " + hours.entry + ".\n" + 
-		"You left working at " + hours.leave + ".\n \n");
+      logger.today();
    });
 
-// check whether start hour was add
+// check whether entry hour was add
 working
    .command('?')
    .description('check whether start hour was add')
    .action(function(){
-    	if(hours.entry && !hours.leave){
-			console.log("\n\nYes, you are.\n\n");
-		}
-		else {
-			console.log("\n\nNo, you are not.\n\n");
-		}
+    	logger.question();
    });
 
 working.parse(process.argv);
