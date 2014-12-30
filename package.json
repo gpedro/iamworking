@@ -2,22 +2,22 @@
   "name": "working",
   "description": "working hours log",
   "version": "0.0.4",
-  "homepage": "",
+  "homepage": "https://github.com/jugoncalves/iamworking",
   "author": {
     "name": "jugoncalves",
     "email": "junia.goncalves@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:jugoncalves/iamworking.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/jugoncalves/iamworking/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": ""
+      "url": "https://github.com/jugoncalves/iamworking/blob/master/LICENSE-MIT"
     }
   ],
   "main": "./lib/logger",
@@ -34,6 +34,12 @@
   "keywords": [],
   "preferGlobal": "true",
   "bin": {
-    "iamworking" : "./bin/working.js"
+    "iamworking": "./bin/working.js"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "moment": "^2.8.4",
+    "moment-precise-range": "^0.1.0",
+    "superb": "^1.0.5"
   }
 }

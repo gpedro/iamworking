@@ -1,8 +1,11 @@
 #! /usr/bin/env node
+"use strict";
 
-var  working = require('commander')
-   , logger  = require('./logger')
-   , pkg     = require('../package.json');
+var  working = require('commander'),
+     logger  = require('../lib/logger'),
+     pkg     = require('../package.json');
+
+logger.start();
 
 // version
 working.version(pkg.version);
@@ -33,10 +36,22 @@ working
 
 // check whether entry hour was add
 working
-   .command('?')
-   .description('check whether start hour was add')
-   .action(function(){
-    	logger.question();
-   });
+    .command('?')
+    .description('check whether start hour was added')
+    .action(function(){
+       logger.question();
+    });
+
+// check whether entry hour was add
+working
+    .command('d')
+    .description('check structure')
+    .action(function(){
+       logger.debug();
+    });
 
 working.parse(process.argv);
+
+if(working.args === 0) {
+   working.help();
+}

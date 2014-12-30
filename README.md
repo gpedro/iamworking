@@ -1,18 +1,24 @@
 #Boss, i am working
 
-To run:
+## Usage
 
-    npm install
-    npm link
-
-## iamworking on
+### iamworking on
     // todo
 
-## iamworking off
+### iamworking off
     // todo
 
-## iamworking today
+### iamworking today
     Show today hours.
 
-## iamworking ?
+### iamworking ?
     Check whether entry hour is open.
+
+##Contributing
+Please submit all issues and pull requests to the [jugoncalves/iamworking](https://github.com/jugoncalves/iamworking) repository!
+
+##Support
+If you have any problem or suggestion please open an issue [here](https://github.com/jugoncalves/iamworking/issues).
+
+## License
+[MIT](https://github.com/jugoncalves/iamworking/blob/master/LICENSE-MIT)
