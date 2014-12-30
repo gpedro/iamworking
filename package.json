@@ -1,7 +1,7 @@
 {
   "name": "working",
   "description": "working hours log",
-  "version": "0.1.0",
+  "version": "0.0.4",
   "homepage": "",
   "author": {
     "name": "jugoncalves",
@@ -20,7 +20,7 @@
       "url": ""
     }
   ],
-  "main": "lib/working",
+  "main": "./lib/logger",
   "engines": {
     "node": ">= 0.6.0"
   },
@@ -34,6 +34,6 @@
   "keywords": [],
   "preferGlobal": "true",
   "bin": {
-    "iamworking" : "lib/working.js"
+    "iamworking" : "./bin/working.js"
   }
 }

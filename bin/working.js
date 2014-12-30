@@ -1,10 +1,11 @@
 #! /usr/bin/env node
 
 var  working = require('commander')
-   , logger = require('./lib/logger');
+   , logger  = require('./logger')
+   , pkg     = require('../package.json');
 
 // version
-working.version('0.0.3');
+working.version(pkg.version);
 
 // log entry hour
 working
